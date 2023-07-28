@@ -35,6 +35,9 @@ module.exports = {
     },
     
   },
+  corePlugins: {
+    preflight: false,
+  },
   variants: {
     extend: {},
   },

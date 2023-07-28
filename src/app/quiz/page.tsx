@@ -44,9 +44,10 @@ const Page: React.FC = () => {
         C: 0,
         D: 0,
     });
-    const onAnswerSelected = (selectedAnswerPoints) => {
+    const onAnswerSelected = (selectedAnswerPoints, idx) => {
+        setSelectedAnswerIndex(idx);
+        setSelectedAnswer(true);
         setChecked(true);
-        setSelectedAnswerIndex(selectedAnswerPoints);
         setCategoryPoints((prev) => ({
             A: prev.A + selectedAnswerPoints.A,
             B: prev.B + selectedAnswerPoints.B,
@@ -110,7 +111,10 @@ const Page: React.FC = () => {
                         {answers.map((answer, idx) => (
                             <li
                                 key={idx}
-                                onClick={() => onAnswerSelected(answer.points)}
+                                onClick={() => {
+                                    onAnswerSelected(answer.points, idx);
+                                    console.log(idx);
+                                }}
                                 className={`my-4 p-3 list-none bg-black shadow-md border-2 rounded-md button-hover ${selectedAnswerIndex === idx ? "button-selected" : ""}`}
                             >
                                 <span>{answer.text}</span>

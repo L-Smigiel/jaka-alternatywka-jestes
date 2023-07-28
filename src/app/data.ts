@@ -14,7 +14,7 @@ export const quiz = {
         question: 'Jakiej słuchasz muzyki?',
         answers: [
           { text: 'Metal', points: { A: 5, B: 0, C: 0, D: 0 } },
-          { text: 'Rap', points: { A: 0, B: 5, C: 0, D: 0 } },
+          { text: 'Rap', points: { A: 0, B: 0, C: 5, D: 0 } },
           { text: 'Każdej', points: { A: 5, B: 5, C: 3, D: 3 } },
           { text: 'Nieważne', points: { A: 0, B: 0, C: 5, D: 5 } },
         ],
@@ -25,7 +25,7 @@ export const quiz = {
         question: 'Masz farbowane włosy?',
         answers: [
           { text: 'Tak', points: { A: 5, B: 0, C: 5, D: 5 } },
-          { text: 'Nie', points: { A: 0, B: 5, C: 0, D: 0 } },
+          { text: 'Nie', points: { A: 0, B: 5, C: 3, D: 0 } },
           { text: 'Nie wiem', points: { A: 0, B: 3, C: 3, D: 0 } },
           { text: 'Nie powiem', points: { A: 0, B: 0, C: 0, D: 0 } },
         ],
@@ -35,8 +35,8 @@ export const quiz = {
         question: 'Gdybyś była zwierzęciem, jakim byś była?',
         answers: [
           { text: 'Kot', points: { A: 0, B: 5, C: 0, D: 5 } },
-          { text: 'Pies', points: { A: 3, B: 5, C: 0, D: 0 } },
-          { text: 'Wilk', points: { A: 5, B: 0, C: 3, D: 3 } },
+          { text: 'Pies', points: { A: 3, B: 5, C: 3, D: 0 } },
+          { text: 'Wilk', points: { A: 5, B: 0, C: 5, D: 3 } },
           { text: 'Pająk', points: { A: 0, B: 0, C: 5, D: 5 } },
         ]
       },
@@ -47,7 +47,7 @@ export const quiz = {
           { text: 'Sztuka', points: { A: 5, B: 0, C: 5, D: 5 } },
           { text: 'Podróżowanie', points: { A: 0, B: 5, C: 0, D: 0 } },
           { text: 'Zakupy', points: { A: 0, B: 5, C: 3, D: 5 } },
-          { text: 'Książki', points: { A: 0, B: 3, C: 0, D: 3 } },
+          { text: 'Książki', points: { A: 0, B: 3, C: 3, D: 3 } },
         ]
       },
       {

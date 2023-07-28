@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,13 +24,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 @layer components {
   .button-selected.button-hover {
-    @apply hover:bg-stone-700 bg-stone-200 text-stone-900 
+    @apply hover:bg-stone-700  hover:border-stone-200 bg-stone-200 text-stone-900 border-stone-800
   }
   .button-hover {
-    @apply hover:bg-stone-800
+    @apply hover:bg-stone-800 hover:border-stone-200
   }
 }
